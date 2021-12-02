@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="./img/vaza1.svg" type="image/x-icon">
+    <link rel="shortcut icon" href=""  id="myVazaShortcut" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vaza</title>
     <meta property="og:type" content="Website">
@@ -66,7 +66,8 @@
 
                 var item1 = myArr[Math.floor(Math.random() * myArr.length)];
                 console.log(item1)
-
+                
+                document.getElementById("myVazaShortcut").href = item1;
                 document.getElementById("myVaza").src = item1;
 
 </script>
